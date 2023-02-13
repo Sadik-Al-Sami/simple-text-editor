@@ -1,16 +1,16 @@
 const boldBtn = document.getElementById("boldBtn");
+const boldIcon = document.getElementById("boldIcon");
 const italicBtn = document.getElementById("italicBtn");
+const italicIcon = document.getElementById("italicIcon");
 const underlineBtn = document.getElementById("underlineBtn");
-const colorPicker = document.getElementById("colorPicker");
+const underlineIcon = document.getElementById("underlineIcon");
 const leftAlignBtn = document.getElementById("leftAlign");
 const rightAlignBtn = document.getElementById("rightAlign");
 const centerAlignBtn = document.getElementById("centerAlign");
 const justifyAlignBtn = document.getElementById("justifyAlign");
 const fontSizeInput = document.getElementById("fontSize");
+const colorPicker = document.getElementById("colorPicker");
 const myPara = document.getElementById("myPara");
-const boldIcon = document.getElementById("boldIcon");
-const italicIcon = document.getElementById("italicIcon");
-const underlineIcon = document.getElementById("underlineIcon");
 
 boldBtn.addEventListener("click", function () {
     if (myPara.style.fontWeight === "bold") {
@@ -24,6 +24,7 @@ boldBtn.addEventListener("click", function () {
         boldIcon.classList.add("text-blue-400")
     }
 });
+
 italicBtn.addEventListener("click", function () {
     if (myPara.style.fontStyle === "italic") {
         myPara.style.fontStyle = "normal";
@@ -36,6 +37,7 @@ italicBtn.addEventListener("click", function () {
         italicIcon.classList.add("text-blue-400");
     }
 });
+
 underlineBtn.addEventListener("click", function () {
     if (myPara.style.textDecoration === "underline") {
         myPara.style.textDecoration = "none";
@@ -48,6 +50,7 @@ underlineBtn.addEventListener("click", function () {
         underlineIcon.classList.add("text-blue-400");
     }
 })
+
 justifyAlignBtn.addEventListener("click", function () {
     if (myPara.style.textAlign === "justify") {
         myPara.style.textAlign = "normal";
@@ -56,6 +59,7 @@ justifyAlignBtn.addEventListener("click", function () {
         myPara.style.textAlign = "justify"
     }
 })
+
 colorPicker.addEventListener("change", function () {
     myPara.style.color = colorPicker.value;
 });
