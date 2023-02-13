@@ -18,13 +18,13 @@
             <div class="flex w-4/5 mx-auto justify-around bg-blue-300 rounded-t-md border border-b-0 border-black p-2">
                 <div class="flex items-center gap-1">
                     <button id="boldBtn"
-                        class="border-2 border-white rounded px-3 py-0.5 group/item transition-all hover:bg-white"><i
+                        class="border-2 border-white rounded px-3 py-0.5 group/item transition-all hover:bg-white"><i id="boldIcon"
                             class="fa-solid fa-bold text-white group-hover/item:text-blue-400 group-hover/item:transition-all"></i></button>
                     <button id="italicBtn"
-                        class="border-2 border-white rounded px-3 py-0.5 group/item transition-all hover:bg-white"><i
+                        class="border-2 border-white rounded px-3 py-0.5 group/item transition-all hover:bg-white"><i id="italicIcon"
                             class="fa-solid fa-italic text-white group-hover/item:text-blue-400 group-hover/item:transition-all"></i></button>
                     <button id="underlineBtn"
-                        class="border-2 border-white rounded px-3 py-0.5 group/item transition-all hover:bg-white"><i
+                        class="border-2 border-white rounded px-3 py-0.5 group/item transition-all hover:bg-white"><i id="underlineIcon"
                             class="fa-solid fa-underline text-white group-hover/item:text-blue-400 group-hover/item:transition-all"></i></button>
                 </div>
                 <div class="flex items-center gap-1">
@@ -48,7 +48,7 @@
                 </div>
             </div>
             <div class="w-4/5 h-2/3 mx-auto bg-blue-300 border border-t-0 border-black p-2">
-                <p id="myPara" class="bg-white h-full outline-none text-black text-base" contentEditable="true"></p>
+                <p id="myPara" class="bg-white h-full outline-none text-black text-base p-2 overflow-scroll overflow-x-hidden leading-normal" contentEditable="true"></p>
             </div>
         </section>
     </main>
