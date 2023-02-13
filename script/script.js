@@ -29,7 +29,7 @@ italicBtn.addEventListener("click", function () {
         myPara.style.fontStyle = "normal";
         italicBtn.classList.remove("bg-white");
         italicIcon.classList.remove("text-blue-400");
-    } 
+    }
     else {
         myPara.style.fontStyle = "italic";
         italicBtn.classList.add("bg-white");
@@ -78,4 +78,13 @@ justifyAlignBtn.addEventListener("click", function () {
 
 fontSizeInput.addEventListener("change", function () {
     myPara.style.fontSize = parseFloat(fontSizeInput.value) + "px"
+});
+
+// copy paste issue solution from web
+myPara.addEventListener("paste", function (event) {
+    event.preventDefault(); // prevent default paste behavior
+    var text = event.clipboardData.getData("text/plain"); // get the plain text from the user
+    document.execCommand("insertHTML", false, "<span>" + text + "</span>"); // insert text as unformatted
+    myPara.normalize(); // merge adjacent text nodes
+    myPara.style.lineHeight = "1.2"; // set a fixed line height to prevent spacing issues
 });
