@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/33fb43d274.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TextEditor</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section class="container mx-auto bg-gradient-to-tr from-sky-500 via-sky-300 to-sky-200 h-[80vh] rounded-md shadow-xl my-8">
+            <h1 class="text-center text-6xl font-mono py-12">My Text Editor</h1>
+            <div class="flex w-4/5 mx-auto justify-around bg-blue-300 rounded-t-md border border-b-0 border-black p-2">
+                <div class="flex items-center gap-1">
+                    <button id="boldBtn"
+                        class="border-2 border-white rounded px-3 py-0.5 group/item transition-all hover:bg-white"><i
+                            class="fa-solid fa-bold text-white group-hover/item:text-blue-400 group-hover/item:transition-all"></i></button>
+                    <button id="italicBtn"
+                        class="border-2 border-white rounded px-3 py-0.5 group/item transition-all hover:bg-white"><i
+                            class="fa-solid fa-italic text-white group-hover/item:text-blue-400 group-hover/item:transition-all"></i></button>
+                    <button id="underlineBtn"
+                        class="border-2 border-white rounded px-3 py-0.5 group/item transition-all hover:bg-white"><i
+                            class="fa-solid fa-underline text-white group-hover/item:text-blue-400 group-hover/item:transition-all"></i></button>
+                </div>
+                <div class="flex items-center gap-1">
+                    <button id="leftAlign"
+                        class="border-2 border-white rounded px-3 py-0.5 group/item transition-all hover:bg-white"><i
+                            class="fa-solid fa-align-left text-white group-hover/item:text-blue-400 group-hover/item:transition-all"></i></button>
+                    <button id="centerAlign"
+                        class="border-2 border-white rounded px-3 py-0.5 group/item transition-all hover:bg-white"><i
+                            class="fa-solid fa-align-center text-white group-hover/item:text-blue-400 group-hover/item:transition-all"></i></button>
+                    <button id="rightAlign"
+                        class="border-2 border-white rounded px-3 py-0.5 group/item transition-all hover:bg-white"><i
+                            class="fa-solid fa-align-right text-white group-hover/item:text-blue-400 group-hover/item:transition-all"></i></button>
+                    <button id="justifyAlign"
+                        class="border-2 border-white rounded px-3 py-0.5 group/item transition-all hover:bg-white"><i
+                            class="fa-solid fa-align-justify text-white group-hover/item:text-blue-400 group-hover/item:transition-all"></i></button>
+                </div>
+                <div class="flex items-center gap-1">
+                    <input type="number" id="fontSize" class="w-12 rounded-sm outline-none px-1" min="16" max="120"
+                        placeholder="16">
+                    <input type="color" id="colorPicker" class="bg-blue-500 rounded-sm">
+                </div>
+            </div>
+            <div class="w-4/5 h-2/3 mx-auto bg-blue-300 border border-t-0 border-black p-2">
+                <p id="myPara" class="bg-white h-full outline-none text-black text-base" contentEditable="true"></p>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="/script/script.js"></script>
+</body>
+
+</html>
