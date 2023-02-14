@@ -13,9 +13,9 @@
 <body>
     <header></header>
     <main>
-        <section class="container mx-auto bg-gradient-to-tr from-sky-500 via-sky-300 to-sky-200 h-[80vh] rounded-md shadow-xl my-8">
-            <h1 class="text-center text-6xl font-mono py-12">My Text Editor</h1>
-            <div class="flex w-4/5 mx-auto justify-around bg-blue-300 rounded-t-md border border-b-0 border-black p-2">
+        <section class="container mx-auto bg-gradient-to-tr from-sky-500 via-sky-300 to-sky-200 h-[85vh] md:rounded-md shadow-2xl my-8">
+            <h1 class="text-center text-6xl font-mono py-10 md:py-12">My Text Editor</h1>
+            <div class="flex flex-col gap-1 md:gap-0 md:flex-row w-11/12 md:w-10/12 mx-auto items-center md:justify-around bg-blue-300 rounded-t-md border border-b-0 border-black p-2">
                 <div class="flex items-center gap-1">
                     <button id="boldBtn"
                         class="border-2 border-white rounded px-3 py-0.5 group/item transition-all hover:bg-white"><i id="boldIcon"
@@ -47,7 +47,7 @@
                     <input type="color" id="colorPicker" class="bg-blue-500 rounded-sm">
                 </div>
             </div>
-            <div class="w-4/5 h-2/3 mx-auto bg-blue-300 border border-t-0 border-black p-2">
+            <div class="w-11/12 md:w-10/12 h-[60%] mx-auto bg-blue-300 border border-t-0 border-black p-2">
                 <p id="myPara" class="bg-white h-full outline-none text-black text-base p-2 overflow-scroll overflow-x-hidden leading-normal" contentEditable="true"></p>
             </div>
         </section>
