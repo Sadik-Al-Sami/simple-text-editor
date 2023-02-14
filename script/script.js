@@ -51,14 +51,6 @@ underlineBtn.addEventListener("click", function () {
     }
 })
 
-justifyAlignBtn.addEventListener("click", function () {
-    if (myPara.style.textAlign === "justify") {
-        myPara.style.textAlign = "normal";
-    }
-    else {
-        myPara.style.textAlign = "justify"
-    }
-})
 
 colorPicker.addEventListener("change", function () {
     myPara.style.color = colorPicker.value;
@@ -84,7 +76,7 @@ fontSizeInput.addEventListener("change", function () {
     myPara.style.fontSize = parseFloat(fontSizeInput.value) + "px"
 });
 
-// copy paste issue solution from web
+// copy paste text size issue for contenteditable paragraph solution from web
 myPara.addEventListener("paste", function (event) {
     event.preventDefault(); // prevent default paste behavior
     var text = event.clipboardData.getData("text/plain"); // get the plain text from the user
